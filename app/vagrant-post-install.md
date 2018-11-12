@@ -1,26 +1,4 @@
 
-Configurate Static IP
-=====================
-For Ubuntu 18.04 LTS:
-
-    sudo nano /etc/netplan/50-vagrant.yml
-
-Change this lines:
-
-    network:
-        ethernets:
-            enp0s8:
-                addresses: [<static-ip>/24]
-                gateway4: <gateway>
-                nameservers:
-                addresses: [8.8.8.8,8.8.4.4]
-                dhcp4: no
-        version: 2
-
-Apply the changes:
-
-    sudo netplan apply
-
 Install dependencies
 ===================
 In the terminal execute:
