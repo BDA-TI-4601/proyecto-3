@@ -1,0 +1,5 @@
+
+app/test_triptec
+app/test_triptec_neo4j
+.vagrant
+*.log
