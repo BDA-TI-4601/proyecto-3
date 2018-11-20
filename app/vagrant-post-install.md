@@ -28,7 +28,7 @@ In `/etc/mongod.conf` change:
 
 Start MongoDB service:
 
-    sudo service mongod start
+    mongod --replSet <repl-name> --dbpath /path/to/db --bind_ip 0.0.0.0
 
 Install Neo4J
 =============
@@ -74,3 +74,18 @@ In the terminal execute:
     sudo apt install zlib1g-dev ruby-full sqlite3 nodejs
 
     sudo gem install rails
+
+Install Mongo-Connector
+=======================
+
+    python3 -m pip install mongo-connector
+
+Initiate Neo4J
+==============
+
+    mongo-connector -m localhost:27017 -t http://localhost:7474/db/data -d neo4j_doc_manager
+
+    mongo-connector -m localhost:27017 -t http://localhost:7474/db/data -d neo4j_doc_manager -n test.talks
+
+
+

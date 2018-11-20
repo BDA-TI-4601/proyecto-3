@@ -32,7 +32,7 @@ Ruby on Rails with Neo4j
 
 new project with Neo4j:
 
-    rails new <project-name> -m http://neo4jrb.io/neo4j/neo4j.rb -O
+    rails new <project-name> -m http://neo4jrb.io/neo4j/neo4j.rb -O --skip-active-record 
     
 add this line to your Gemfile (below `gem 'neo4j'`):
 

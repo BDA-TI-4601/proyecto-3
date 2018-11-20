@@ -1,0 +1,100 @@
+
+employees = {
+    "_id" : string,
+    "username" : string,
+    "password" : string,
+    "touristic_places" : [
+        {
+            "_id" : string
+        }
+    ]
+}
+
+touristic_places = {
+    "_id" : string,
+    "name" : string,
+    "latitude" : string,
+    "longitude" : string,
+    "address" : string,
+    "type" : string,
+    "img" : string,
+    "telephone" : string,
+    "rating" : float,
+    "schedule" : string,
+    "website" : string,
+    "description" : string,
+    "activities" : [
+        {
+            "_id" : string
+        }
+    ],
+    "price" : string
+}
+
+activities = {
+    "_id" : string,
+    "name" : string
+}
+
+clients = {
+    "_id" : string,
+    "id" : string,
+    "name" : string,
+    "username" : string,
+    "password" : string,
+    "telephone" : string,
+    "email" : string,
+    "birth_date" : date,
+    "reservations" : [
+        {
+            "_id" : string
+        }
+    ]
+}
+
+reservations = {
+    "_id" : string,
+    "amount_people" : int,
+    "arrive_date" : date,
+    "departure_date" : date,
+    "needs" : [
+        {
+            "_id" : string
+        }
+    ],
+    "activities" : [
+        {
+            "_id" : string
+        }
+    ],
+    "wish_list" : [
+        {
+            "_id" : string
+        }
+    ]
+}
+
+needs = {
+    "_id" : string,
+    "name" : string
+}
+
+wish_places = {
+    "name" : string,
+    "type" : string,
+    "telephone" : string,
+    "img" : string,
+    "latitude" : string,
+    "longitude" : string,
+    "rating" : int,
+    "schedule" : string,
+    "website" : string,
+    "distance" : int
+}
+
+administrators = {
+    "_id" : string,
+    "name" : string,
+    "username" : string,
+    "password" : string
+}

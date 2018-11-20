@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://maps.googleapis.com/maps/api/jsvv=3.exp&sensor=false&libraries=places"></script>
+    </head>
+    <body>
+        <input id="searchInput" class="controls" type="text" placeholder="Enter a location">
+        <script>
+            function initMap() {
+                var input = document.getElementById('searchInput');
+                var autocomplete = new google.maps.places.Autocomplete(input);
+            }
+        </script>
+    </body>
+</html>
