@@ -1,4 +1,4 @@
-class Employee
+class TouristicPlace
   include Mongoid::Document
   field :name_place, type: String
   field :latitude, type: String

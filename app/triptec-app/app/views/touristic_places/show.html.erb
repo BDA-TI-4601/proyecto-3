@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name place:</strong>
+  <%= @touristic_place.name_place %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @touristic_place.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @touristic_place.longitude %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @touristic_place.address %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @touristic_place.type %>
+</p>
+
+<p>
+  <strong>Img:</strong>
+  <%= @touristic_place.img %>
+</p>
+
+<p>
+  <strong>Telephone:</strong>
+  <%= @touristic_place.telephone %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @touristic_place.rating %>
+</p>
+
+<p>
+  <strong>Schedule:</strong>
+  <%= @touristic_place.schedule %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @touristic_place.website %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @touristic_place.description %>
+</p>
+
+<p>
+  <strong>Activities:</strong>
+  <%= @touristic_place.activities %>
+</p>
+
+<p>
+  <strong>Price per day:</strong>
+  <%= @touristic_place.price_per_day %>
+</p>
+
+<%= link_to 'Edit', edit_touristic_place_path(@touristic_place) %> |
+<%= link_to 'Back', touristic_places_path %>
