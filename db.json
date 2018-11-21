@@ -1,15 +1,4 @@
 
-employees = {
-    "_id" : string,
-    "username" : string,
-    "password" : string,
-    "touristic_places" : [
-        {
-            "_id" : string
-        }
-    ]
-}
-
 touristic_places = {
     "_id" : string,
     "name" : string,
@@ -23,17 +12,8 @@ touristic_places = {
     "schedule" : string,
     "website" : string,
     "description" : string,
-    "activities" : [
-        {
-            "_id" : string
-        }
-    ],
+    "activities" : [string],
     "price" : string
-}
-
-activities = {
-    "_id" : string,
-    "name" : string
 }
 
 clients = {

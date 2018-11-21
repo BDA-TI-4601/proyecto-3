@@ -59,3 +59,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # MongoDB gems
 gem 'mongoid'
 gem 'bson_ext'
+
+# Google Maps gems
+gem 'google_places'
+
+# Bootstrap
+gem 'bootstrap-generators'
+
+#jQuery
+gem 'jquery-rails'
