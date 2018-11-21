@@ -78,3 +78,313 @@ administrators = {
     "username" : string,
     "password" : string
 }
+
+5bf50f8ad8fcdcba6b53e28a
+db.touristic_places.insertMany({
+    "name" : "Volcan Irazu",
+    "latitude" : "9.9972637",
+    "longitude" : "-83.8431073054617",
+    "address" : "Oreamuno, Cartago, Costa Rica",
+    "type" : "park",
+    "img" : "",
+    "telephone" : "",
+    "rating" : "4",
+    "schedule" : "Mon-Fri: 9am-4pm",
+    "website" : "volcairazu.com",
+    "description" : "parquecito",
+    "activities" : ["caminar", "comer", "mirador"],
+    "price" : "1500"
+})
+
+5bf50f8ad8fcdcba6b53e28a
+db.touristic_places.insertMany([{
+    "name" : "Volcan Irazu",
+    "latitude" : "9.9972637",
+    "longitude" : "-83.8431073054617",
+    "address" : "Oreamuno, Cartago, Costa Rica",
+    "type" : "park",
+    "img" : "",
+    "telephone" : "",
+    "rating" : "4",
+    "schedule" : "Mon-Fri: 9am-4pm",
+    "website" : "volcairazu.com",
+    "description" : "parquecito",
+    "activities" : ["caminar", "comer", "mirador"],
+    "price" : "1500"
+},{
+    "name" : "San Carlos",
+    "latitude" : "10.6204181",
+    "longitude" : "-84.4252466790484",
+    "address" : "San Carlos, Alajuela, Costa Rica",
+    "type" : "town",
+    "img" : "",
+    "telephone" : "24607546",
+    "rating" : "3",
+    "schedule" : "Always",
+    "website" : "sancarlos.com",
+    "description" : "pueblillo",
+    "activities" : ["caminar", "turismo", "piscinas", "pesca"],
+    "price" : "7000"
+},{
+    "name" : "San Carlos",
+    "latitude" : "10.6204181",
+    "longitude" : "-84.4252466790484",
+    "address" : "San Carlos, Alajuela, Costa Rica",
+    "type" : "town",
+    "img" : "",
+    "telephone" : "24607546",
+    "rating" : "3",
+    "schedule" : "Always",
+    "website" : "sancarlos.com",
+    "description" : "pueblillo",
+    "activities" : ["caminar", "turismo", "piscinas", "pesca"],
+    "price" : "7000"
+},{
+    "name" : "Tres Rios",
+    "latitude" : "9.9080401",
+    "longitude" : "-83.9872",
+    "address" : "Tres Rios, Cartago, Costa Rica",
+    "type" : "town",
+    "img" : "",
+    "telephone" : "266515212",
+    "rating" : "5",
+    "schedule" : "Always",
+    "website" : "tresrios.com",
+    "description" : "sitio para hacer amigos",
+    "activities" : ["fiestas", "caminar", "comer", "futbol"],
+    "price" : "5000"
+}])
+
+ObjectId("5bf5114c9bd3766a139daf59"),
+ObjectId("5bf5114c9bd3766a139daf5a"),
+ObjectId("5bf5114c9bd3766a139daf5b"),
+ObjectId("5bf5114c9bd3766a139daf5c")
+
+
+5bf50fb3d8fcdcba6b53e28b
+db.touristic_places.insertOne({
+    "name" : "San Carlos",
+    "latitude" : "10.6204181",
+    "longitude" : "-84.4252466790484",
+    "address" : "San Carlos, Alajuela, Costa Rica",
+    "type" : "town",
+    "img" : "",
+    "telephone" : "24607546",
+    "rating" : "3",
+    "schedule" : "Always",
+    "website" : "sancarlos.com",
+    "description" : "pueblillo",
+    "activities" : ["caminar", "turismo", "piscinas", "pesca"],
+    "price" : "7000"
+})
+
+5bf50fc4d8fcdcba6b53e28c
+db.touristic_places.insertOne({
+    "name" : "Tres Rios",
+    "latitude" : "9.9080401",
+    "longitude" : "-83.9872",
+    "address" : "Tres Rios, Cartago, Costa Rica",
+    "type" : "town",
+    "img" : "",
+    "telephone" : "266515212",
+    "rating" : "5",
+    "schedule" : "Always",
+    "website" : "tresrios.com",
+    "description" : "sitio para hacer amigos",
+    "activities" : ["fiestas", "caminar", "comer", "futbol"],
+    "price" : "5000"
+})
+
+5bf50fd3d8fcdcba6b53e28d
+db.touristic_places.insertOne({
+    "name" : "Heredia",
+    "latitude" : "10.17778125",
+    "longitude" : "-84.0591841807008",
+    "address" : "Heredia, Heredia, Costa Rica",
+    "type" : "city",
+    "img" : "",
+    "telephone" : "255651823",
+    "rating" : "2",
+    "schedule" : "Always",
+    "website" : "heredia.com",
+    "description" : "la ciudad de las flores",
+    "activities" : ["compras", "cines", "caminar", "restaurantes"],
+    "price" : "6000"
+})
+
+5bf50feed8fcdcba6b53e28e
+db.wishes.insertMany([{
+    "name" : "Curridabat",
+    "type" : "town",
+    "telephone" : "1611652165",
+    "img" : "",
+    "latitude" : "5.065030",
+    "longitude" : "01.1165123",
+    "rating" : "5",
+    "schedule" : "Always",
+    "website" : "curri.com",
+    "distance" : "2000"
+},{
+    "name" : "San Jose",
+    "type" : "city",
+    "telephone" : "165132165",
+    "img" : "",
+    "latitude" : "40.65132032",
+    "longitude" : "-84.151321",
+    "rating" : "1",
+    "schedule" : "Always",
+    "website" : "chepe.com",
+    "distance" : "8000"
+},{
+    "name" : "San Jose",
+    "type" : "city",
+    "telephone" : "165132165",
+    "img" : "",
+    "latitude" : "40.65132032",
+    "longitude" : "-84.151321",
+    "rating" : "1",
+    "schedule" : "Always",
+    "website" : "chepe.com",
+    "distance" : "22000"
+},{
+    "name" : "San Jose",
+    "type" : "city",
+    "telephone" : "165132165",
+    "img" : "",
+    "latitude" : "40.65132032",
+    "longitude" : "-84.151321",
+    "rating" : "1",
+    "schedule" : "Always",
+    "website" : "chepe.com",
+    "distance" : "100000"
+},{
+    "name" : "Parrilla Venezolana",
+    "type" : "restaurant",
+    "telephone" : "216513216",
+    "img" : "",
+    "latitude" : "78.16516",
+    "longitude" : "-82.9841321",
+    "rating" : "3",
+    "schedule" : "Tue-Sun: 10am-10pm",
+    "website" : "carnita.com",
+    "distance" : "5000"
+}])
+
+5bf50ffbd8fcdcba6b53e28f
+db.wishes.insertOne({
+    "name" : "San Jose",
+    "type" : "city",
+    "telephone" : "165132165",
+    "img" : "",
+    "latitude" : "40.65132032",
+    "longitude" : "-84.151321",
+    "rating" : "1",
+    "schedule" : "Always",
+    "website" : "chepe.com",
+    "distance" : "8000"
+})
+
+5bf5100bd8fcdcba6b53e290
+db.wishes.insertOne({
+    "name" : "San Jose",
+    "type" : "city",
+    "telephone" : "165132165",
+    "img" : "",
+    "latitude" : "40.65132032",
+    "longitude" : "-84.151321",
+    "rating" : "1",
+    "schedule" : "Always",
+    "website" : "chepe.com",
+    "distance" : "22000"
+})
+
+5bf51019d8fcdcba6b53e291
+db.wishes.insertOne({
+    "name" : "San Jose",
+    "type" : "city",
+    "telephone" : "165132165",
+    "img" : "",
+    "latitude" : "40.65132032",
+    "longitude" : "-84.151321",
+    "rating" : "1",
+    "schedule" : "Always",
+    "website" : "chepe.com",
+    "distance" : "100000"
+})
+
+5bf5102cd8fcdcba6b53e292
+db.wishes.insertOne({
+    "name" : "Parrilla Venezolana",
+    "type" : "restaurant",
+    "telephone" : "216513216",
+    "img" : "",
+    "latitude" : "78.16516",
+    "longitude" : "-82.9841321",
+    "rating" : "3",
+    "schedule" : "Tue-Sun: 10am-10pm",
+    "website" : "carnita.com",
+    "distance" : "5000"
+})
+
+5bf5103ad8fcdcba6b53e293
+db.wishes.insertOne({
+    "name" : "Parrilla Venezolana",
+    "type" : "restaurant",
+    "telephone" : "216513216",
+    "img" : "",
+    "latitude" : "78.16516",
+    "longitude" : "-82.9841321",
+    "rating" : "3",
+    "schedule" : "Tue-Sun: 10am-10pm",
+    "website" : "carnita.com",
+    "distance" : "5000"
+})
+
+5bf51049d8fcdcba6b53e294
+db.clients.insertMany([{
+    "id" : "207440546",
+    "name" : "Ernesto Ulate",
+    "username" : "ernesto",
+    "password" : "ernesto123",
+    "telephone" : "88649896",
+    "email" : "ernesto@correo.com",
+    "reservations" : []
+},{
+    "id" : "116050598",
+    "name" : "Geovanny Espinoza",
+    "username" : "geo",
+    "password" : "geo123",
+    "telephone" : "84161566",
+    "email" : "geo@correo.com",
+    "reservations" : []
+},{
+    "id" : "320351651",
+    "name" : "Fabian Astorga",
+    "username" : "fab",
+    "password" : "fab123",
+    "telephone" : "64651684",
+    "email" : "fab@correo.com",
+    "reservations" : []
+}])
+
+5bf51056d8fcdcba6b53e295
+db.clients.insertOne({
+    "id" : "116050598",
+    "name" : "Geovanny Espinoza",
+    "username" : "geo",
+    "password" : "geo123",
+    "telephone" : "84161566",
+    "email" : "geo@correo.com",
+    "reservations" : []
+})
+
+5bf51062d8fcdcba6b53e296
+db.clients.insertOne({
+    "id" : "320351651",
+    "name" : "Fabian Astorga",
+    "username" : "fab",
+    "password" : "fab123",
+    "telephone" : "64651684",
+    "email" : "fab@correo.com",
+    "reservations" : []
+})

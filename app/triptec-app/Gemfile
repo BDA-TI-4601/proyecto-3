@@ -66,5 +66,8 @@ gem 'google_places'
 # Bootstrap
 gem 'bootstrap-generators'
 
-#jQuery
+# JQuery
 gem 'jquery-rails'
+
+# Record tag helper
+gem 'record_tag_helper'

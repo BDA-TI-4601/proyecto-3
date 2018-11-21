@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  amount_people: 
+  arrive_date: 2018-11-21
+  departure_date: 2018-11-21
+  needs: 
+  activities: 
+
+two:
+  name: MyString
+  amount_people: 
+  arrive_date: 2018-11-21
+  departure_date: 2018-11-21
+  needs: 
+  activities: 

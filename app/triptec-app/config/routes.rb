@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
 
-  root "touristic_places#index"
+  resources :spots
+  root 'logins#index'
+
+  resources :logins
+  resources :clients
+  resources :employees
+  resources :reservations
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

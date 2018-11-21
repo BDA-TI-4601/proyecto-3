@@ -1,0 +1,32 @@
+<div class="page-header">
+  <%= link_to reservations_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_reservation_path(@reservation), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show reservation</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Name:</dt>
+  <dd><%= @reservation.name %></dd>
+
+  <dt>Amount people:</dt>
+  <dd><%= @reservation.amount_people %></dd>
+
+  <dt>Arrive date:</dt>
+  <dd><%= @reservation.arrive_date %></dd>
+
+  <dt>Departure date:</dt>
+  <dd><%= @reservation.departure_date %></dd>
+
+  <dt>Needs:</dt>
+  <dd><%= @reservation.needs %></dd>
+
+  <dt>Activities:</dt>
+  <dd><%= @reservation.activities %></dd>
+
+</dl>

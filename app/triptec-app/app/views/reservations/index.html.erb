@@ -1,0 +1,45 @@
+<div class="page-header">
+
+  <h1>Listing reservations</h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Name</th>
+            <th>Amount people</th>
+            <th>Arrive date</th>
+            <th>Departure date</th>
+            <th>Needs</th>
+            <th>Activities</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @reservations) do |reservation| %>
+            <td><%= reservation.name %></td>
+            <td><%= reservation.amount_people %></td>
+            <td><%= reservation.arrive_date %></td>
+            <td><%= reservation.departure_date %></td>
+            <td><%= reservation.needs %></td>
+            <td><%= reservation.activities %></td>
+            <td><%= link_to 'Show', reservation %></td>
+        <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
+        <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<h3><%= link_to 'Create reservation',
+    :controller => 'reservations',
+    :action => 'new',
+    :user => @username_actual %></h3>
+
+<%= link_to 'Log Out', 
+  :controller => 'logins',
+  :action => 'index' %>

@@ -1,0 +1,53 @@
+<div class="page-header">
+  <%= link_to spots_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_spot_path(@spot), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show spot</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Name:</dt>
+  <dd><%= @spot.name %></dd>
+
+  <dt>Latitude:</dt>
+  <dd><%= @spot.latitude %></dd>
+
+  <dt>Longitude:</dt>
+  <dd><%= @spot.longitude %></dd>
+
+  <dt>Address:</dt>
+  <dd><%= @spot.address %></dd>
+
+  <dt>Type:</dt>
+  <dd><%= @spot.type %></dd>
+
+  <dt>Img:</dt>
+  <dd><%= @spot.img %></dd>
+
+  <dt>Telephone:</dt>
+  <dd><%= @spot.telephone %></dd>
+
+  <dt>Rating:</dt>
+  <dd><%= @spot.rating %></dd>
+
+  <dt>Schedule:</dt>
+  <dd><%= @spot.schedule %></dd>
+
+  <dt>Website:</dt>
+  <dd><%= @spot.website %></dd>
+
+  <dt>Description:</dt>
+  <dd><%= @spot.description %></dd>
+
+  <dt>Activities:</dt>
+  <dd><%= @spot.activities %></dd>
+
+  <dt>Price:</dt>
+  <dd><%= @spot.price %></dd>
+
+</dl>

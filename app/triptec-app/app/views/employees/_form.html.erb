@@ -1,0 +1,86 @@
+
+<%= form_for(@employee, html: { class: "form-horizontal", role: "form" }) do |f| %>
+  <% if @employee.errors.any? %>
+    <div class="p-3 mb-2 bg-success text-white" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <h4><%= pluralize(@employee.errors.count, "error") %> prohibited this employee from being saved:</h4>
+
+      <ul>
+      <% @employee.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group" id="locationField">
+    <div class="col-sm-10">
+      <b>Search place  </b>
+      <input id="autocomplete" placeholder="Enter your address" type="text"></input>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :description, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :description, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :activities, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :activities, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :price_per_day, class: "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :price_per_day, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-10">
+      <%= f.hidden_field :latitude, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-10">
+      <%= f.hidden_field :longitude, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-10">
+      <%= f.hidden_field :place_id, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADMbY9eYILhr4V_1oj4OiwaGPIYBXp5oM&libraries=places&callback=initAutocomplete"
+  async defer>
+</script>
+
+<script>
+  var placeSearch, autocomplete;
+
+  function initAutocomplete() {
+    autocomplete = new google.maps.places.Autocomplete(
+        /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+        {types: ['geocode']});
+
+    autocomplete.addListener('place_changed', fillInAddress);
+  }
+
+  function fillInAddress() {
+    // Get the place details from the autocomplete object.
+    var place = autocomplete.getPlace();
+
+    document.getElementById("employee_latitude").value = place["geometry"]["viewport"]["l"]["j"]
+    document.getElementById("employee_longitude").value = place["geometry"]["viewport"]["j"]["j"]
+
+  }
+</script>
